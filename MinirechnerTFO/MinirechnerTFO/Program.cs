@@ -16,8 +16,20 @@ namespace MinirechnerTFO
             Console.Write("Geben Sie Zahl2 ein: ");
             int Zahl2 = Convert.ToInt32(Console.ReadLine());
 
+            //Ergebnisse
+
+            int ErgA = Addition(Zahl1, Zahl2);
+            Console.WriteLine("\nDas Ergebniss der Addition beträgt: "+ErgA);
+
             Console.ReadKey();
+
             
         }
+        public static int Addition(int Zahl1, int Zahl2)
+        {
+            int Erg = Zahl1 + Zahl2;
+            return Erg;
+        }
     }
+
 }
