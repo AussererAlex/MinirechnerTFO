@@ -22,6 +22,8 @@ namespace MinirechnerTFO
             Console.WriteLine("\nDas Ergebniss der Addition beträgt: "+ErgA);
             int ErgS = Suptraktion(Zahl1, Zahl2);
             Console.WriteLine("Das Ergebniss der Suptraktion beträgt: " + ErgS);
+            int ErgM = Multiplikation(Zahl1, Zahl2);
+            Console.WriteLine("Das Ergebniss der Multiplikation beträgt: " + ErgM);
 
             Console.ReadKey();
 
@@ -35,6 +37,11 @@ namespace MinirechnerTFO
         public static int Suptraktion(int Zahl1, int Zahl2)
         {
             int Erg = Zahl1 - Zahl2;
+            return Erg;
+        }
+        public static int Multiplikation(int Zahl1, int Zahl2)
+        {
+            int Erg = Zahl1 * Zahl2;
             return Erg;
         }
     }
